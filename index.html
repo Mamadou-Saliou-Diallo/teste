@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <h1>teste👉👉👉👉</h1>
+    <script src="code.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander le nom complet</title>
+</head>
+<body>
+
+    <h1>Entrez votre nom complet</h1>
+    
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" placeholder="Votre prénom">
+    
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" placeholder="Votre nom">
+    
+    <button id="submit">Afficher le nom complet</button>
+
+    <h2 id="resultat"></h2>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function() {
+            // Récupérer les valeurs des champs
+            const prenom = document.getElementById('prenom').value;
+            const nom = document.getElementById('nom').value;
+
+            // Afficher le nom complet
+            document.getElementById('resultat').textContent = `Votre nom complet est : ${prenom} ${nom}`;
+        });
+    </script>
+
+</body>
+</html>
